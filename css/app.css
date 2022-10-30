@@ -144,10 +144,10 @@ input.searchButton {
 
 @media (min-width: 40rem) {
 	#content {
-		width: 580px;
+		/* width: 580px; */
 		padding-left:330px;
 		margin-left: 0px;
-		margin-right: 0px;
+		/*margin-right: 0px; */
 	}
 }
 
@@ -290,14 +290,14 @@ input.searchButton {
 #content u {color: #C35555;}
 
 #back_to_top {
-    display: none;
+    display: block;
     position: fixed;
 
     height: 20px;
     width: 70px;
     top: 20px;
 
-    margin-left: 930px;
+    margin-left: 90%;
     margin-top: 0px;
 
     color: #FFF;
@@ -310,20 +310,27 @@ input.searchButton {
     background-color: #AAA;
 }
 
+@media (max-width: 500px) {
+  #back_to_top {
+    display: none;
+  }
+}
+
+
 #back_to_top:hover {
     background-color: #444;
     cursor: pointer;
 }
 
 #edit {
-    display: none;
+    display: block;
     position: fixed;
 
     height: 17px;
     width: 70px;
     top: 45px;
 
-    margin-left: 930px;
+    margin-left: 90%;
     margin-top: 0px;
 
     color: #FFF;
@@ -335,6 +342,13 @@ input.searchButton {
     border-radius: 5px;
     background-color: #AAA;
 }
+
+@media (max-width: 500px) {
+  #edit {
+    display: none;
+  }
+}
+
 
 #edit:hover {
     background-color: #444;
@@ -401,7 +415,7 @@ input.searchButton {
 
 @media (min-width: 40rem) {
 	#flip{
-		margin-left:545px;
+		margin-left:50%;
 		width:150px;
 	}
 }

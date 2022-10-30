@@ -132,7 +132,7 @@ function searchbar_listener(event) {
 
 
 function init_back_to_top_button() {
-  $(ditto.back_to_top_id).show();
+  // $(ditto.back_to_top_id).show();
   $(ditto.back_to_top_id).on('click', goTop);
 }
 
@@ -154,7 +154,7 @@ function init_edit_button() {
   if (ditto.base_url === null) {
     alert("Error! You didn't set 'base_url' when calling ditto.run()!");
   } else {
-    $(ditto.edit_id).show();
+    // $(ditto.edit_id).show();
     $(ditto.edit_id).on("click", function() {
       var hash = location.hash.replace("#", "/");
       if (/#.*$/.test(hash)) {
